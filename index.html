@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <header>
+        <h1 id="title">LGBTQ+ en la actualidad.</h1>
+        <p id="description">El objetibo es identificar los principales tabúes que afectan a la comunidad LGBTQ+ buscando
+            diferentes puntos de origen que permita la formacion de una conciencia de no discriminacion de esta en la
+            sociedad actual.</p>
+
+    </header>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Edad<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad" />
+        </div>
+        <div class="form-group">
+            <p>¿Habías escuchado hablar sobre la comunidad LGBTQ+?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Marca una de las siguientes respuestas</option>
+                <option value="student">Siempre.</option>
+                <option value="job">Casi siempre.</option>
+                <option value="learner">A veces.</option>
+                <option value="preferNo">Casi nunca.</option>
+                <option value="other">Nunca.</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>¿Consideras que es importante informarse y hablar abiertamente sobre el tema?</p>
+            <div id="tema">
+                <label>
+                    <input name="user-recommend" value="siempre" type="radio" class="input-radio"
+                        checked />Siempre</label>
+                <label>
+                    <input name="user-recommend" value="aveces" type="radio" class="input-radio" />A veces</label>
+
+                <label><input name="user-recommend" value="seguro" type="radio" class="input-radio" />No estoy
+                    seguro</label>
+                <label hidden><input name="user-recommend" checked value="No estoy seguro" type="radio"
+                        class="input-radio" />Not
+                    sure</label> </div>
+        </div>
+        <div class="form-group">
+            <p>
+                ¿Usted acudiria a algun sitio web o alguna institución para conocer más?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">SÍ</option>
+                <option value="projects">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>
+                ¿Cómo manifiesta su apoyo a esta comunidad?
+                <span class="clue">(Seleccionar todas las que aplican)</span>
+            </p>
+
+            <div class="checkbox"><label><input name="prefer" value="respeto" type="checkbox"
+                        class="input-checkbox" />Respeto</label></div>
+            <div class="checkbox"><label>
+                    <input name="prefer" value="evento" type="checkbox" class="input-checkbox" />Acudo a algún
+                    evento</label></div>
+            <div class="checkbox"><label><input name="prefer" value="Dando visibilidad en las Redes Sociales"
+                        type="checkbox" class="input-checkbox" />Dando visibilidad en las Redes Sociales</label></div>
+            <div class="checkbox"><label><input name="prefer" value="servicio" type="checkbox"
+                        class="input-checkbox" />Participo de un
+                    servicio comunitario brindando
+                    acompañamiento o asesoramiento
+                </label></div>
+            <div class="checkbox"></div><label><input name="prefer" value="noparticipo" type="checkbox"
+                    class="input-checkbox" />No
+                participo</label>
+        </div>
+        </div>
+        <div class="form-group">
+            <p>¿Qué podemos hacer para ayudar a otras personas a superar el prejuicio y la discriminacion que acosan a
+                esta comunidad? ¿Cree usted que es por falta de infomación?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Agregue un comentario aquí..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <p>
+                ¿Usted acudiria en estos casos a alguna de estas instituciones?
+                <span class="clue">(Seleccionar todas las que aplican)</span>
+            </p>
+
+            <div class="checkbox"><label class="form-check-label"><input name="prefer" value="respeto" type="checkbox"
+                class="form-check-input" />Org. LGBTQ+</label></div>
+            <div class="checkbox"><label>
+                    <input name="prefer" value="evento" type="checkbox" class="input-checkbox" />Policia</label></div>
+            <div class="checkbox"><label><input name="prefer" value="Dando visibilidad en las Redes Sociales"
+                        type="checkbox" class="input-checkbox" />Org.DDHH</label></div>
+            <div class="checkbox"><label><input name="prefer" value="servicio" type="checkbox"
+                        class="input-checkbox" />Inadi</label></div>
+            <div class="checkbox"><label><input name="prefer" value="noparticipo" type="checkbox"
+                        class="input-checkbox" />A ninguno</label></div>
+        </div>
+        <div class="form-group">
+            <p>
+                En cuanto a su experiencia (medios de comunicacion,comentarios,etc) Cree usted que denunciar estos actos
+                de discriminacion ante las autoridades, entidades de salud y organizaciones sociales:
+                <span class="clue">(Seleccionar todas las que aplican)</span>
+            </p>
+
+            <div class="checkbox"><label><input name="prefer" value="respeto" type="checkbox"
+                        class="input-checkbox" />Sirve y recibe apoyo
+                    profesional</label></div>
+            <div class="checkbox"><label><input name="prefer" value="noparticipo" type="checkbox"
+                        class="input-checkbox" />Sirve pero no se
+                    recibe apoyo profesional</label></div>
+            <div class="checkbox"><label><input name="prefer" value="evento" type="checkbox"
+                        class="input-checkbox" />Aumenta el daño</label></div>
+            <div class="checkbox"><label><input name="prefer" value="Dando visibilidad en las Redes Sociales"
+                        type="checkbox" class="input-checkbox" />No sirve porque no sancionan la accion
+                    discriminatoria</label></div>
+            <div class="checkbox"><label><input name="prefer" value="servicio" type="checkbox"
+                        class="input-checkbox" />No sirve y empeora la
+                    situación de discriminación</label></div>
+
+        </div>
+        <div class="form-group">
+            <p>Ante una situación de discriminación ¿Cómo reaccionarias?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Agregue un comentario aquí..."></textarea>
+        </div>
+
+        <div class="submit-div">
+            <button type="submit" id="submit" class="btn btn-outline-dark">
+                Enviar.
+            </button>
+        </div>
+
+
+
+
+    </form>
+</body>
+
+</html>
