@@ -11,46 +11,44 @@
 <body>
     <header>
         <h1 id="title">LGBTQ+ en la actualidad.</h1>
-        <p id="description">El objetibo es identificar los principales tabúes que afectan a la comunidad LGBTQ+ buscando
-            diferentes puntos de origen que permita la formacion de una conciencia de no discriminacion de esta en la
-            sociedad actual.</p>
+        <p id="description">El objetivo es buscar diferentes puntos de origen que permitan la formación de una conciencia
+            de no discriminación.</p>
 
     </header>
 
     <form id="survey-form">
         <div class="form-group">
-            <label id="name-label" for="name">Nombre</label>
+            <label class="pregunta" id="name-label" for="name">Nombre</label>
             <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
         </div>
         <div class="form-group">
-            <label id="email-label" for="email">Email</label>
-            <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+            <label class="pregunta" id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
         </div>
         <div class="form-group">
-            <label id="number-label" for="number">Edad<span class="clue">(optional)</span></label>
+            <label class="pregunta" id="number-label" for="number">Edad</label>
             <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad" />
         </div>
+        <hr>
         <div class="form-group">
             <p>¿Habías escuchado hablar sobre la comunidad LGBTQ+?</p>
-            <select id="dropdown" name="role" class="form-control" required>
+            <select id="dropdown" name="escuchar" class="form-control" required>
                 <option disabled selected value>Marca una de las siguientes respuestas</option>
-                <option value="student">Siempre.</option>
-                <option value="job">Casi siempre.</option>
-                <option value="learner">A veces.</option>
-                <option value="preferNo">Casi nunca.</option>
-                <option value="other">Nunca.</option>
+                <option value="si">Si.</option>
+                <option value="no">No, pero tengo una idea.</option>
+                <option value="nunca">No, nunca escuche.</option>
             </select>
         </div>
         <div class="form-group">
             <p>¿Consideras que es importante informarse y hablar abiertamente sobre el tema?</p>
             <div id="tema">
                 <label>
-                    <input name="user-recommend" value="siempre" type="radio" class="input-radio"
-                        checked />Siempre</label>
+                    <input name="user-recommend" value="si" type="radio" class="form-check-input"
+                        checked />Si</label>
                 <label>
-                    <input name="user-recommend" value="aveces" type="radio" class="input-radio" />A veces</label>
+                    <input name="user-recommend" value="aveces" type="radio" class="form-check-input" />A veces</label>
 
-                <label><input name="user-recommend" value="seguro" type="radio" class="input-radio" />No estoy
+                <label><input name="user-recommend" value="seguro" type="radio" class="form-check-input" />No estoy
                     seguro</label>
                 <label hidden><input name="user-recommend" checked value="No estoy seguro" type="radio"
                         class="input-radio" />Not
@@ -58,7 +56,7 @@
         </div>
         <div class="form-group">
             <p>
-                ¿Usted acudiria a algun sitio web o alguna institución para conocer más?
+                ¿Usted acudiría a algún sitio web o alguna institución para conocer más?
             </p>
             <select id="most-like" name="mostLike" class="form-control" required>
                 <option disabled selected value>Select an option</option>
@@ -68,25 +66,24 @@
         </div>
         <div class="form-group">
             <p>
-                ¿Cómo manifiesta su apoyo a esta comunidad?
+                ¿Cómo manifiestas tú apoyo a esta comunidad?
                 <span class="clue">(Seleccionar todas las que aplican)</span>
             </p>
 
             <div class="checkbox"><label><input name="prefer" value="respeto" type="checkbox"
-                        class="input-checkbox" />Respeto</label></div>
+                        class="form-check-input" />Respeto</label></div>
             <div class="checkbox"><label>
-                    <input name="prefer" value="evento" type="checkbox" class="input-checkbox" />Acudo a algún
+                    <input name="prefer" value="evento" type="checkbox" class="form-check-input" />Acudo a algún
                     evento</label></div>
             <div class="checkbox"><label><input name="prefer" value="Dando visibilidad en las Redes Sociales"
-                        type="checkbox" class="input-checkbox" />Dando visibilidad en las Redes Sociales</label></div>
+                        type="checkbox" class="form-check-input" />Dando visibilidad en las Redes Sociales</label></div>
             <div class="checkbox"><label><input name="prefer" value="servicio" type="checkbox"
-                        class="input-checkbox" />Participo de un
+                        class="form-check-input" />Participo de un
                     servicio comunitario brindando
                     acompañamiento o asesoramiento
                 </label></div>
-            <div class="checkbox"></div><label><input name="prefer" value="noparticipo" type="checkbox"
-                    class="input-checkbox" />No
-                participo</label>
+            <div class="checkbox"><label><input name="prefer" value="noparticipo" type="checkbox"
+                        class="form-check-input" />No participo</label></div>
         </div>
         </div>
         <div class="form-group">
@@ -103,15 +100,15 @@
             </p>
 
             <div class="checkbox"><label class="form-check-label"><input name="prefer" value="respeto" type="checkbox"
-                class="form-check-input" />Org. LGBTQ+</label></div>
+                        class="form-check-input" />Org. LGBTQ+</label></div>
             <div class="checkbox"><label>
-                    <input name="prefer" value="evento" type="checkbox" class="input-checkbox" />Policia</label></div>
+                    <input name="prefer" value="evento" type="checkbox" class="form-check-input" />Policia</label></div>
             <div class="checkbox"><label><input name="prefer" value="Dando visibilidad en las Redes Sociales"
-                        type="checkbox" class="input-checkbox" />Org.DDHH</label></div>
+                        type="checkbox" class="form-check-input" />Org.DDHH</label></div>
             <div class="checkbox"><label><input name="prefer" value="servicio" type="checkbox"
-                        class="input-checkbox" />Inadi</label></div>
+                        class="form-check-input" />Inadi</label></div>
             <div class="checkbox"><label><input name="prefer" value="noparticipo" type="checkbox"
-                        class="input-checkbox" />A ninguno</label></div>
+                        class="form-check-input" />A ninguno</label></div>
         </div>
         <div class="form-group">
             <p>
@@ -121,18 +118,18 @@
             </p>
 
             <div class="checkbox"><label><input name="prefer" value="respeto" type="checkbox"
-                        class="input-checkbox" />Sirve y recibe apoyo
+                        class="form-check-input" />Sirve y recibe apoyo
                     profesional</label></div>
             <div class="checkbox"><label><input name="prefer" value="noparticipo" type="checkbox"
-                        class="input-checkbox" />Sirve pero no se
+                        class="form-check-input" />Sirve pero no se
                     recibe apoyo profesional</label></div>
             <div class="checkbox"><label><input name="prefer" value="evento" type="checkbox"
-                        class="input-checkbox" />Aumenta el daño</label></div>
+                        class="form-check-input" />Aumenta el daño</label></div>
             <div class="checkbox"><label><input name="prefer" value="Dando visibilidad en las Redes Sociales"
-                        type="checkbox" class="input-checkbox" />No sirve porque no sancionan la accion
+                        type="checkbox" class="form-check-input" />No sirve porque no sancionan la accion
                     discriminatoria</label></div>
             <div class="checkbox"><label><input name="prefer" value="servicio" type="checkbox"
-                        class="input-checkbox" />No sirve y empeora la
+                        class="form-check-input" />No sirve y empeora la
                     situación de discriminación</label></div>
 
         </div>
@@ -153,5 +150,6 @@
 
     </form>
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>
