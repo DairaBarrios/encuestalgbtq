@@ -5,13 +5,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 
 
 <body>
     <header>
         <h1 id="title">LGBTQ+ en la actualidad.</h1>
-        <p id="description">El objetivo es buscar diferentes puntos de origen que permitan la formación de una conciencia
+        <p id="description">El objetivo es buscar diferentes puntos de origen que permitan la formación de una
+            conciencia
             de no discriminación.</p>
 
     </header>
@@ -19,15 +21,15 @@
     <form id="survey-form">
         <div class="form-group">
             <label class="pregunta" id="name-label" for="name">Nombre</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            <input type="text" name="nombre id=" name" class="form-control" placeholder="Ingresa tu nombre" required />
         </div>
         <div class="form-group">
             <label class="pregunta" id="email-label" for="email">Email</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+            <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu email" required />
         </div>
         <div class="form-group">
             <label class="pregunta" id="number-label" for="number">Edad</label>
-            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad" />
+            <input type="number" name="edad" id="number" min="10" max="99" class="form-control" placeholder="Edad" />
         </div>
         <hr>
         <div class="form-group">
@@ -43,25 +45,23 @@
             <p>¿Consideras que es importante informarse y hablar abiertamente sobre el tema?</p>
             <div id="tema">
                 <label>
-                    <input name="user-recommend" value="si" type="radio" class="form-check-input"
-                        checked />Si</label>
+                    <input name="hablar" value="si" type="radio" class="form-check-input" checked />Si</label>
                 <label>
-                    <input name="user-recommend" value="aveces" type="radio" class="form-check-input" />A veces</label>
+                    <input name="hablar" value="no" type="radio" class="form-check-input" />No</label>
 
-                <label><input name="user-recommend" value="seguro" type="radio" class="form-check-input" />No estoy
+                <label><input name="hablar" value="seguro" type="radio" class="form-check-input" />No estoy
                     seguro</label>
-                <label hidden><input name="user-recommend" checked value="No estoy seguro" type="radio"
-                        class="input-radio" />Not
+                <label hidden><input name="hablar" checked value="nada" type="radio" class="input-radio" />Not
                     sure</label> </div>
         </div>
         <div class="form-group">
             <p>
                 ¿Usted acudiría a algún sitio web o alguna institución para conocer más?
             </p>
-            <select id="most-like" name="mostLike" class="form-control" required>
-                <option disabled selected value>Select an option</option>
-                <option value="challenges">SÍ</option>
-                <option value="projects">No</option>
+            <select id="most-like" name="conocer" class="form-control" required>
+                <option disabled selected value>Seleccione una opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
             </select>
         </div>
         <div class="form-group">
@@ -70,26 +70,26 @@
                 <span class="clue">(Seleccionar todas las que aplican)</span>
             </p>
 
-            <div class="checkbox"><label><input name="prefer" value="respeto" type="checkbox"
+            <div class="checkbox"><label><input name="apoyo" value="respeto" type="checkbox"
                         class="form-check-input" />Respeto</label></div>
             <div class="checkbox"><label>
-                    <input name="prefer" value="evento" type="checkbox" class="form-check-input" />Acudo a algún
+                    <input name="apoyo" value="evento" type="checkbox" class="form-check-input" />Acudo a algún
                     evento</label></div>
-            <div class="checkbox"><label><input name="prefer" value="Dando visibilidad en las Redes Sociales"
-                        type="checkbox" class="form-check-input" />Dando visibilidad en las Redes Sociales</label></div>
-            <div class="checkbox"><label><input name="prefer" value="servicio" type="checkbox"
+            <div class="checkbox"><label><input name="apoyo" value="visibilidad" type="checkbox"
+                        class="form-check-input" />Dando visibilidad en las Redes Sociales</label></div>
+            <div class="checkbox"><label><input name="apoyo" value="servicio" type="checkbox"
                         class="form-check-input" />Participo de un
                     servicio comunitario brindando
                     acompañamiento o asesoramiento
                 </label></div>
-            <div class="checkbox"><label><input name="prefer" value="noparticipo" type="checkbox"
+            <div class="checkbox"><label><input name="apoyo" value="noparticipo" type="checkbox"
                         class="form-check-input" />No participo</label></div>
         </div>
         </div>
         <div class="form-group">
             <p>¿Qué podemos hacer para ayudar a otras personas a superar el prejuicio y la discriminacion que acosan a
                 esta comunidad? ¿Cree usted que es por falta de infomación?</p>
-            <textarea id="comments" class="input-textarea" name="comment"
+            <textarea id="comments" class="input-textarea" name="prejuicio"
                 placeholder="Agregue un comentario aquí..."></textarea>
         </div>
 
@@ -99,43 +99,44 @@
                 <span class="clue">(Seleccionar todas las que aplican)</span>
             </p>
 
-            <div class="checkbox"><label class="form-check-label"><input name="prefer" value="respeto" type="checkbox"
-                        class="form-check-input" />Org. LGBTQ+</label></div>
+            <div class="checkbox"><label class="form-check-label"><input name="casos" value="lgbtq" type="checkbox"
+                        class="form-check-input" />Org.LGBTQ+</label></div>
             <div class="checkbox"><label>
-                    <input name="prefer" value="evento" type="checkbox" class="form-check-input" />Policia</label></div>
-            <div class="checkbox"><label><input name="prefer" value="Dando visibilidad en las Redes Sociales"
-                        type="checkbox" class="form-check-input" />Org.DDHH</label></div>
-            <div class="checkbox"><label><input name="prefer" value="servicio" type="checkbox"
+                    <input name="casos" value="ddhh" type="checkbox" class="form-check-input" />Org.DDHH</label></div>
+            <div class="checkbox"><label><input name="casos" value="policia" type="checkbox"
+                        class="form-check-input" />Policia</label></div>
+            <div class="checkbox"><label><input name="casos" value="servicio" type="checkbox"
                         class="form-check-input" />Inadi</label></div>
-            <div class="checkbox"><label><input name="prefer" value="noparticipo" type="checkbox"
+            <div class="checkbox"><label><input name="casos" value="ninguno" type="checkbox"
                         class="form-check-input" />A ninguno</label></div>
         </div>
         <div class="form-group">
             <p>
-                En cuanto a su experiencia (medios de comunicacion,comentarios,etc) Cree usted que denunciar estos actos
+                En cuanto a su experiencia (medios de comunicacion,comentarios,etc), cree usted que denunciar estos
+                actos
                 de discriminacion ante las autoridades, entidades de salud y organizaciones sociales:
                 <span class="clue">(Seleccionar todas las que aplican)</span>
             </p>
 
-            <div class="checkbox"><label><input name="prefer" value="respeto" type="checkbox"
+            <div class="checkbox"><label><input name="denunciar" value="recibe" type="checkbox"
                         class="form-check-input" />Sirve y recibe apoyo
                     profesional</label></div>
-            <div class="checkbox"><label><input name="prefer" value="noparticipo" type="checkbox"
+            <div class="checkbox"><label><input name="denunciar" value="norecibe" type="checkbox"
                         class="form-check-input" />Sirve pero no se
                     recibe apoyo profesional</label></div>
-            <div class="checkbox"><label><input name="prefer" value="evento" type="checkbox"
+            <div class="checkbox"><label><input name="denunciar" value="daño" type="checkbox"
                         class="form-check-input" />Aumenta el daño</label></div>
-            <div class="checkbox"><label><input name="prefer" value="Dando visibilidad en las Redes Sociales"
-                        type="checkbox" class="form-check-input" />No sirve porque no sancionan la accion
+            <div class="checkbox"><label><input name="denunciar" value="nosirve" type="checkbox"
+                        class="form-check-input" />No sirve porque no sancionan la accion
                     discriminatoria</label></div>
-            <div class="checkbox"><label><input name="prefer" value="servicio" type="checkbox"
+            <div class="checkbox"><label><input name="denunciar" value="empeora" type="checkbox"
                         class="form-check-input" />No sirve y empeora la
                     situación de discriminación</label></div>
 
         </div>
         <div class="form-group">
             <p>Ante una situación de discriminación ¿Cómo reaccionarias?</p>
-            <textarea id="comments" class="input-textarea" name="comment"
+            <textarea id="comments" class="input-textarea" name="reaccion"
                 placeholder="Agregue un comentario aquí..."></textarea>
         </div>
 
@@ -150,6 +151,6 @@
 
     </form>
 </body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 
 </html>

@@ -37,6 +37,15 @@ form {
     padding: 5%;
 }
 
+@media (max-width: 720px) {
+    form {
+        margin: 5% 5% 10% 5%;
+        background-color: rgba(245, 169, 107, 0.589);
+        border-radius: 20px;
+        padding: 5%;
+    }
+}
+
 div {
     margin-bottom: 2%;
 }
@@ -82,17 +91,15 @@ textarea:focus, input:focus {
     justify-items: center;
 }
 
-.checkbox{
+.checkbox {
     padding-left: 50px;
-    
 }
 
-label{
+label {
     font-size: 1.2em;
-
 }
 
-.pregunta{
+.pregunta {
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -105,10 +112,10 @@ hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-  }
+}
 
-  .clue {
+.clue {
     margin-left: 0.25rem;
     font-size: 0.9rem;
     color: #080808;
-  }
+}
